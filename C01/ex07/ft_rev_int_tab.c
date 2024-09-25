@@ -13,49 +13,6 @@
 #include <unistd.h>
 #include <stdio.h>
 
-void	ft_rev_int_tab(int *tab, int size)
-{
-	int	i;
-	int	temp;	
-
-	i = 0;
-	while (i < (size - 1) / 2)
-	{
-		temp = tab[i];
-		tab[i] = tab[size - 1 - i];
-		tab[size - 1 - i] = temp;
-		i++;
-	}
-}
-/*
-int	main(void)
-{
-	int	numbers[] = {1, 2, 3, 4, 5};
-	int	size = 5;
-	int	i;
-	int	j;
-
-	i = 0;
-	j = 0;
-	while (i < size)
-	{
-		printf("%d", numbers[i]);
-		i++;
-	}
-	ft_rev_int_tab(numbers, size);
-	printf("\n");
-	while (j < size)
-	{
-		printf("%d", numbers[j]);
-		j++;
-	}
-	return (0);
-}
-*/
-/* ********************************better alternative****************************
-#include <unistd.h>
-#include <stdio.h>
-
 void    ft_rev_int_tab(int *tab, int size)
 {
         int     temp;
@@ -74,7 +31,7 @@ void    ft_rev_int_tab(int *tab, int size)
         }
 
 }
-
+/*
 int     main()
 {
         int     i;
@@ -88,5 +45,4 @@ int     main()
         }
         return (0);
 }
-*/
-~     
+*/     
